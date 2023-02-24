@@ -1,0 +1,112 @@
+@font-face {
+    /*font-family: 'Director-Regular';
+    src: url('../fonts/Director-Regular.woff') format('truetype');*/
+
+    font-family: 'Latitude-Regular';
+    src: url('../fonts/Latitude-Regular.woff') format('truetype');
+
+    /*font-family: 'Latitude-Regular';
+    src: url('../fonts/Latitude-Regular.woff') format('truetype');*/
+  }
+
+@media print {
+
+    @page {
+        size: 210mm 297mm;
+        margin-top: 20mm;
+        margin-bottom: 15mm;
+    
+        /* bleed: 6mm; 
+        marks: crop; 
+        @bottom-center{
+            content: counter(page);
+        }*/
+    }  
+
+    @page :left {
+        margin-left: 15mm;
+        margin-right: 25mm;
+      }
+      
+      @page :right {
+        margin-left: 25mm;
+        margin-right: 15mm;
+      }
+
+      @page:right{
+        @bottom-left {
+          content: counter(page);
+        }
+      }
+      
+      @page:left{
+        @bottom-right {
+          content: counter(page);
+        }
+      }
+
+    img { max-width: 100% }
+
+}  
+
+p {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 9pt;
+    font-family: 'Latitude-Regular', serif;
+    font-weight: normal;
+    page-break-inside: avoid;
+    line-height: 115%;
+}
+
+h1 {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 32pt;
+    font-family: 'Latitude-Regular', serif;
+    font-weight: normal;
+    page-break-inside: avoid;
+    line-height: 105%;
+}
+
+h2 {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 24pt;
+    font-family: 'Latitude-Regular', serif;
+    font-weight: normal;
+    line-height: 110%;
+}
+
+h3 {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 20pt;
+    font-family: 'Latitude-Regular', serif;
+    font-weight: normal;
+    line-height: 110%;
+}
+
+h4 {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 16pt;
+    font-family: 'Latitude-Regular', serif;
+    font-weight: normal;
+    line-height: 110%;
+}
+
+h5 {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 14pt;
+    font-family: 'Latitude-Regular', serif;
+    font-weight: normal;
+    line-height: 110%;
+}
