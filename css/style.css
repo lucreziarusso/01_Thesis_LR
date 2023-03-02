@@ -2,11 +2,11 @@
     /*font-family: 'Director-Regular';
     src: url('../fonts/Director-Regular.woff') format('truetype');*/
 
-    font-family: 'Latitude-Regular';
-    src: url('../fonts/Latitude-Regular.woff') format('truetype');
+    font-family: 'Literata-Regular';
+    src: url('../fonts/Literata-Regular.ttf') format('truetype');
 
-    /*font-family: 'Latitude-Regular';
-    src: url('../fonts/Latitude-Regular.woff') format('truetype');*/
+    /*font-family: 'Literata-Regular';
+    src: url('../fonts/Literata-Regular.woff') format('truetype');*/
   }
 
 @media print {
@@ -22,6 +22,17 @@
             content: counter(page);
         }*/
     }  
+
+    .two {
+      column-count: 2;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+    }
+    .one {
+      column-count: 1;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+    }
 
     @page :left {
         margin-left: 15mm;
@@ -54,7 +65,7 @@ p {
     text-align: left;
     text-decoration-color: black;
     font-size: 9pt;
-    font-family: 'Latitude-Regular', serif;
+    font-family: 'Literata-Regular', serif;
     font-weight: normal;
     page-break-inside: avoid;
     line-height: 115%;
@@ -65,7 +76,7 @@ h1 {
     text-align: left;
     text-decoration-color: black;
     font-size: 32pt;
-    font-family: 'Latitude-Regular', serif;
+    font-family: 'Literata-Regular', serif;
     font-weight: normal;
     page-break-inside: avoid;
     line-height: 105%;
@@ -76,7 +87,7 @@ h2 {
     text-align: left;
     text-decoration-color: black;
     font-size: 24pt;
-    font-family: 'Latitude-Regular', serif;
+    font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 110%;
 }
@@ -86,7 +97,7 @@ h3 {
     text-align: left;
     text-decoration-color: black;
     font-size: 20pt;
-    font-family: 'Latitude-Regular', serif;
+    font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 110%;
 }
@@ -96,7 +107,7 @@ h4 {
     text-align: left;
     text-decoration-color: black;
     font-size: 16pt;
-    font-family: 'Latitude-Regular', serif;
+    font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 110%;
 }
@@ -106,7 +117,7 @@ h5 {
     text-align: left;
     text-decoration-color: black;
     font-size: 14pt;
-    font-family: 'Latitude-Regular', serif;
+    font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 110%;
 }
