@@ -5,6 +5,9 @@
     font-family: 'Literata-Regular';
     src: url('../fonts/Literata-Regular.ttf') format('truetype');
 
+    font-family: 'Literata-Italic';
+    src: url('../fonts/Literata-Italic.ttf') format('truetype');
+
     /*font-family: 'Literata-Regular';
     src: url('../fonts/Literata-Regular.woff') format('truetype');*/
   }
@@ -32,7 +35,10 @@
       column-count: 1;
       -webkit-column-count: 1;
       -moz-column-count: 1;
-    }
+    /* }
+    .ital {
+      font-family: 'Literata-Italic';
+    } */
 
     @page:left {
         margin-left: 15mm;
