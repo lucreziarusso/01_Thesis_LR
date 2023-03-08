@@ -1,7 +1,5 @@
 @font-face {
-    /*font-family: 'Director-Regular';
-    src: url('../fonts/Director-Regular.woff') format('truetype');*/
-
+ 
     font-family: 'Literata-Regular';
     src: url('../fonts/Literata-Regular.ttf') format('truetype');
 
@@ -14,8 +12,6 @@
     font-family: 'NotCourierSans.ttf';
     src: url('../fonts/NotCourierSans.ttf') format('truetype');
 
-    /*font-family: 'Literata-Regular';
-    src: url('../fonts/Literata-Regular.woff') format('truetype');*/
   }
 
 @media print {
@@ -90,13 +86,13 @@
       }
 
       @page:right{
-        @bottom-left {
+        @top-right {
           content: counter(page);
         }
       }
       
       @page:left{
-        @bottom-right {
+        @top-left {
           content: counter(page);
         }
       }
