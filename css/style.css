@@ -18,6 +18,9 @@
     font-family: 'NotCourierSans.ttf';
     src: url('../fonts/NotCourierSans.ttf') format('truetype');
 
+    font-family: 'NotCourierSans-Bold.ttf';
+    src: url('../fonts/NotCourierSans-Bold.ttf') format('truetype');
+
   }
 
 @media print {
@@ -187,8 +190,8 @@ h5 {
 }
 
 .caption {
-  font-family: 'NoCourierSans', monospace;
+  font-family: 'NotCourierSans-Bold', monospace;
   font-size: 8pt;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   /* color: gray; */
 }
