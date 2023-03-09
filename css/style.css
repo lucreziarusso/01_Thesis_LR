@@ -110,7 +110,7 @@
     }
       
     @page:left{
-      @top-left {
+      @top-left-corner {
         content: counter(page);
       }
 
@@ -126,6 +126,11 @@
 
 }  
 
+@counter-style{
+  font-family: 'Literata-Regular', serif;
+  font-size: 8pt;
+}
+
 p {
     border: none;
     text-align: left;
@@ -134,7 +139,7 @@ p {
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
     /* page-break-inside: avoid; */
-    line-height: 125%;
+    line-height: 130%;
 }
 
 h1 {
@@ -146,7 +151,7 @@ h1 {
     font-weight: normal;
     /* page-break-before: always; */
     page-break-after: avoid;
-    line-height: 0%;
+    line-height: 110%;
     string-set: doctitle content(); 
 }
 
@@ -196,9 +201,9 @@ h5 {
   /* color: gray; */
 }
 
-.caption {
+.fnnum {
   font-family: 'NotCourierSans-Bold', monospace;
-  font-size: 8pt;
+  font-size: 7pt;
   /* text-transform: uppercase; */
-  /* color: gray; */
+  color: deeppink;
 }
