@@ -27,7 +27,7 @@
 
     @page {
         size: 210mm 297mm;
-        margin-top: 35mm;
+        margin-top: 40mm;
         margin-bottom: 15mm;
     
         /* bleed: 6mm; 
@@ -89,31 +89,38 @@
         margin-right: 25mm;
       }
       
-      @page:right {
-        margin-left: 25mm;
-        margin-right: 15mm;
-      }
-
-      @page:right{
-        @top-right-corner {
-          content: counter(page);
-        }
-
-        @top-left{
-          content: string(doctitle);
-            grid-column: 1 / 3;
-            margin-right: 50px;
-            font-family: 'Literata-Regular', serif;
-            text-transform: uppercase;
-            font-size: 8pt;
-          }
-      }
+    @page:right {
+      margin-left: 25mm;
+      margin-right: 15mm;
+    }
       
-      @page:left{
-        @top-left {
-          content: counter(page);
-        }
+    @page:right{
+      @top-right-corner {
+        content: counter(page);
       }
+
+      @top-left{
+        content: "From Processing to Design";
+          grid-column: 1 / 3;
+          margin-right: 50px;
+          font-family: 'Literata-Regular', serif;
+          text-transform: uppercase;
+          font-size: 8pt;
+        }
+    }
+      
+    @page:left{
+      @top-left {
+        content: counter(page);
+      }
+
+      @top-right {
+        content: string(doctitle);
+        font-family: 'Literata-Regular', serif;
+        text-transform: uppercase;
+        font-size: 8pt;
+      }
+    }
 
     img { max-width: 100% }
 
