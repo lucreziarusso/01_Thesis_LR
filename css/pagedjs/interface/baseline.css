@@ -3,8 +3,8 @@
 @media screen {
 
     .pagedjs_pagebox {
-        --pagedjs-baseline: 22px;
-        --pagedjs-baseline-position: 5px;
+        --pagedjs-baseline: 16px;
+        --pagedjs-baseline-position: 0px;
         --pagedjs-baseline-color: cyan;
         background: linear-gradient(transparent 0%, transparent calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) calc(var(--pagedjs-baseline) - 1px), var(--pagedjs-baseline-color) var(--pagedjs-baseline)), transparent;
         background-size: 100% var(--pagedjs-baseline);

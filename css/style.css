@@ -132,26 +132,28 @@
 }
 
 p {
-    border: none;
+    border-top: none;
     text-align: left;
     text-decoration-color: black;
-    font-size: 9pt;
+    font-size: 12px;
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
     /* page-break-inside: avoid; */
-    line-height: 130%;
+    line-height: 16px;
+    /* margin-bottom: 7pt; */
 }
 
 h1 {
-    border: none;
+    border-top: -13px;
+    border-bottom: none;
     text-align: left;
     text-decoration-color: black;
-    font-size: 18pt;
+    font-size: 24px;
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
     /* page-break-before: always; */
     page-break-after: avoid;
-    line-height: 110%;
+    line-height: 32px;
     string-set: doctitle content(); 
 }
 
@@ -197,13 +199,15 @@ h5 {
 
 .footnote {
   font-family: 'Literata-Bold', serif;
-  font-size: 8pt;
+  font-size: 10px;
+  line-height: 16px;
   /* color: gray; */
 }
 
 .fnnum {
   font-family: 'NotCourierSans-Bold', monospace;
-  font-size: 7pt;
+  font-size: 10px;
+  line-height: 16px;
   /* text-transform: uppercase; */
   color: deeppink;
 }
