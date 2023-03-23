@@ -132,7 +132,9 @@
 }
 
 p {
-    border-top: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
     text-align: left;
     text-decoration-color: black;
     font-size: 12px;
@@ -144,8 +146,11 @@ p {
 }
 
 h1 {
-    border-top: -13px;
-    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 64px;
+    padding: 0;
+    border-top: none;
+    /* border-bottom: 16px; */
     text-align: left;
     text-decoration-color: black;
     font-size: 24px;
@@ -198,6 +203,10 @@ h5 {
 }
 
 .footnote {
+  margin: 1px;
+  padding: 0;
+  border: 1px;
+  border-color: black;
   font-family: 'Literata-Bold', serif;
   font-size: 10px;
   line-height: 16px;
@@ -205,6 +214,10 @@ h5 {
 }
 
 .fnnum {
+  margin: 1px;
+  padding: 0;
+  border: 1px;
+  border-color: black;
   font-family: 'NotCourierSans-Bold', monospace;
   font-size: 10px;
   line-height: 16px;
