@@ -204,10 +204,10 @@ h2 {
     border: none;
     text-align: left;
     text-decoration-color: black;
-    font-size: 11pt;
+    font-size: 13pt;
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
-    line-height: 100%;
+    line-height: 120%;
 }
 
 h3 {
