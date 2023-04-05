@@ -141,6 +141,7 @@
 aside{
   margin: 0;
   padding-top: 0px;
+  background-color: aquamarine;
   /* border: 1px solid black; */
   text-align: left;
   text-decoration-color: black;
