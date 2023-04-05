@@ -44,7 +44,7 @@
       /* grid-auto-rows: minmax(100px, auto); */
     }
     .one {
-      margin-top: 50px;
+      /* margin-top: 50px; */
       grid-column: 1 / 2;
       /* grid-row: 1; */
     }
@@ -140,8 +140,7 @@
 
 aside{
   margin: 0;
-  padding-top: 0px;
-  background-color: aquamarine;
+  padding: 0px;
   /* border: 1px solid black; */
   text-align: left;
   text-decoration-color: black;
@@ -242,8 +241,9 @@ h5 {
 }
 
 .footnote {
-  margin-top: 0px;
-  padding-top: 0px;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: aqua; */
   /* border: 1px solid black; */
   font-family: 'Literata-Bold', serif;
   font-size: 10px;
