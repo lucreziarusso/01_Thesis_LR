@@ -1,58 +1,61 @@
 @font-face {
- 
-    font-family: 'Literata-Regular';
-    src: url('../fonts/Literata-Regular.ttf') format('truetype');
 
-    font-family: 'Literata-Italic';
-    src: url('../fonts/Literata-Italic.ttf') format('truetype');
+  font-family: 'Literata-Regular';
+  src: url('../fonts/Literata-Regular.ttf') format('truetype');
 
-    font-family: 'Literata-Bold';
-    src: url('../fonts/Literata-Bold.ttf') format('truetype');
+  font-family: 'Literata-Italic';
+  src: url('../fonts/Literata-Italic.ttf') format('truetype');
 
-    font-family: 'Literata-BoldItalic';
-    src: url('../fonts/Literata-BoldItalic.ttf') format('truetype');
+  font-family: 'Literata-Bold';
+  src: url('../fonts/Literata-Bold.ttf') format('truetype');
 
-    font-family: 'Compagnon-Roman.woff';
-    src: url('../fonts/Compagnon-Roman.woff') format('truetype');
+  font-family: 'Literata-BoldItalic';
+  src: url('../fonts/Literata-BoldItalic.ttf') format('truetype');
 
-    font-family: 'NotCourierSans.ttf';
-    src: url('../fonts/NotCourierSans.ttf') format('truetype');
+  font-family: 'Compagnon-Roman.woff';
+  src: url('../fonts/Compagnon-Roman.woff') format('truetype');
 
-    font-family: 'NotCourierSans-Bold.ttf';
-    src: url('../fonts/NotCourierSans-Bold.ttf') format('truetype');
+  font-family: 'NotCourierSans.ttf';
+  src: url('../fonts/NotCourierSans.ttf') format('truetype');
 
-  }
+  font-family: 'NotCourierSans-Bold.ttf';
+  src: url('../fonts/NotCourierSans-Bold.ttf') format('truetype');
+
+}
 
 @media print {
 
-    @page {
-        size: 210mm 297mm;
-        margin-top: 40mm;
-        margin-bottom: 15mm;
-    
-        /* bleed: 6mm; 
+  @page {
+    size: 210mm 297mm;
+    margin-top: 40mm;
+    margin-bottom: 15mm;
+
+    /* bleed: 6mm; 
         marks: crop; 
         @bottom-center{
             content: counter(page);
         }*/
-    }  
+  }
 
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 14px;
-      /* grid-auto-rows: minmax(100px, auto); */
-    }
-    .one {
-      /* margin-top: 50px; */
-      grid-column: 1 / 2;
-      /* grid-row: 1; */
-    }
-    .two {
-      grid-column: 2 / 6;
-      /* grid-row: 1 / 3; */
-    }
-    /* .three {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 14px;
+    /* grid-auto-rows: minmax(100px, auto); */
+  }
+
+  .one {
+    /* margin-top: 50px; */
+    grid-column: 1 / 2;
+    /* grid-row: 1; */
+  }
+
+  .two {
+    grid-column: 2 / 6;
+    /* grid-row: 1 / 3; */
+  }
+
+  /* .three {
       grid-column: 1;
       grid-row: 2 / 5;
     }
@@ -68,49 +71,50 @@
       grid-column: 3;
       grid-row: 4;
     } */
-    
-    
-    .twoCol {
-      column-count: 2;
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-    }
-    .oneCol {
-      column-count: 1;
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
+
+
+  .twoCol {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+  }
+
+  .oneCol {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     /* }
     .ital {
       font-family: 'Literata-Italic';
     } */
 
 
-    @page:left {
-        margin-left: 15mm;
-        margin-right: 25mm;
-      }
-      
-    @page:right {
+    @page: left {
+      margin-left: 15mm;
+      margin-right: 25mm;
+    }
+
+    @page: right {
       margin-left: 25mm;
       margin-right: 15mm;
     }
-      
-    @page:right{
+
+    @page: right {
       @top-right-corner {
         content: counter(page);
       }
 
-      @top-left{
+      @top-left {
         content: "From Processing to Design";
-          grid-column: 1 / 3;
-          margin-right: 50px;
-          font-family: 'Literata-Regular', serif;
-          text-transform: uppercase;
-          font-size: 8pt;
-        }
+        grid-column: 1 / 3;
+        margin-right: 50px;
+        font-family: 'Literata-Regular', serif;
+        text-transform: uppercase;
+        font-size: 8pt;
+      }
     }
-      
-    @page:left{
+
+    @page: left {
       @top-left-corner {
         content: counter(page);
       }
@@ -125,66 +129,66 @@
 
     /* img { max-width: 100% } */
 
-}  
+  }
 
-@counter-style{
-  font-family: 'Literata-Regular', serif;
-  font-size: 8pt;
-}
+  @counter-style {
+    font-family: 'Literata-Regular', serif;
+    font-size: 8pt;
+  }
 
-/* * {
+  /* * {
 	border: 1px dotted;
   color: black
 } */
 
 
-aside{
-  margin: 0;
-  padding: 0px;
-  /* border: 1px solid black; */
-  text-align: left;
-  text-decoration-color: black;
-  font-size: 12px;
-  font-family: 'Literata-Regular', serif;§
-  font-weight: normal;
-  /* page-break-inside: avoid; */
-  line-height: 16px;
-  /* background-color: blue; */
-  /* margin-bottom: 7pt; */
-}
+  aside {
+    margin: 0;
+    padding: 0px;
+    /* border: 1px solid black; */
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 12px;
+    font-family: 'Literata-Regular', serif;
+    § font-weight: normal;
+    /* page-break-inside: avoid; */
+    line-height: 16px;
+    /* background-color: blue; */
+    /* margin-bottom: 7pt; */
+  }
 
-section{
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid black; */
-  text-align: left;
-  text-decoration-color: black;
-  font-size: 12px;
-  font-family: 'Literata-Regular', serif;§
-  font-weight: normal;
-  /* page-break-inside: avoid; */
-  line-height: 16px;
-  /* background-color: blue; */
-  /* margin-bottom: 7pt; */
-}
+  section {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 12px;
+    font-family: 'Literata-Regular', serif;
+    § font-weight: normal;
+    /* page-break-inside: avoid; */
+    line-height: 16px;
+    /* background-color: blue; */
+    /* margin-bottom: 7pt; */
+  }
 
 
-p {
+  p {
     margin: 0;
     padding-left: 30px;
     /* border: 1px solid black; */
     text-align: left;
     text-decoration-color: black;
     font-size: 12px;
-    font-family: 'Literata-Regular', serif;§
-    font-weight: normal;
+    font-family: 'Literata-Regular', serif;
+    § font-weight: normal;
     /* page-break-inside: avoid; */
     line-height: 16px;
     /* background-color: blue; */
     /* margin-bottom: 7pt; */
-}
+  }
 
-h1 {
+  h1 {
     margin-top: 0;
     margin-bottom: 64px;
     padding: 0;
@@ -197,10 +201,10 @@ h1 {
     /* page-break-before: always; */
     page-break-after: avoid;
     line-height: 32px;
-    string-set: doctitle content(); 
-}
+    string-set: doctitle content();
+  }
 
-h2 {
+  h2 {
     border: none;
     text-align: left;
     text-decoration-color: black;
@@ -208,19 +212,19 @@ h2 {
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 120%;
-}
+  }
 
-h3 {
-  border: none;
-  text-align: left;
-  text-decoration-color: black;
-  font-size: 10pt;
-  font-family: 'Literata-Regular', serif;
-  font-weight: normal;
-  line-height: 100%;
-}
+  h3 {
+    border: none;
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 10pt;
+    font-family: 'Literata-Regular', serif;
+    font-weight: normal;
+    line-height: 100%;
+  }
 
-h4 {
+  h4 {
     border: none;
     text-align: left;
     text-decoration-color: black;
@@ -228,9 +232,9 @@ h4 {
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 110%;
-}
+  }
 
-h5 {
+  h5 {
     border: none;
     text-align: left;
     text-decoration-color: black;
@@ -238,61 +242,105 @@ h5 {
     font-family: 'Literata-Regular', serif;
     font-weight: normal;
     line-height: 110%;
-}
+  }
 
-.footnote {
-  margin: 0px;
-  padding: 0px;
-  /* background-color: aqua; */
-  /* border: 1px solid black; */
-  font-family: 'Literata-Bold', serif;
-  font-size: 10px;
-  line-height: 16px;
-  page-break-before: always;
-  page-break-after: avoid;
-  /* color: gray; */
-}
+  .maintitle {
+    margin-top: 0;
+    margin-bottom: -6px;
+    padding: 0;
+    /* border: 1px solid black; */
+    text-align: left;
+    text-decoration-color: black;
+    font-size: 34px;
+    font-family: 'Literata-Regular', serif;
+    font-weight: normal;
+    /* page-break-before: always; */
+    page-break-after: avoid;
+    line-height: 42px;
+    string-set: doctitle content();
+  }
 
-.fnnum {
-  margin: 0;
-  padding: 0;
-	/* border: 1px solid black; */
-  font-family: 'NotCourierSans-Bold', monospace;
-  font-size: 10px;
-  line-height: 100%;
-  background-color: aqua;
-  /* text-transform: uppercase; */
-  color: deeppink;
-}
+  .footnote {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    font-family: 'Literata-Bold', serif;
+    font-size: 10px;
+    line-height: 16px;
+    page-break-before: always;
+    page-break-after: avoid;
+    /* color: gray; */
+  }
 
-.quote {
-  margin-top: 0px;
-  padding: 0px;
-  /* border: 1px solid black; */
-  font-family: 'Literata-Italic', serif;
-  font-size: 11px;
-  line-height: 16px;
-  /* color: gray; */
-}
+  .fnnum {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    font-family: 'NotCourierSans-Bold', monospace;
+    font-size: 10px;
+    line-height: 100%;
+    background-color: aqua;
+    /* text-transform: uppercase; */
+    color: deeppink;
+  }
 
-.biblio {
-  margin-top: 0px;
-  padding: 0px;
-  /* border: 1px solid black; */
-  font-family: 'Literata-Regular', serif;
-  font-size: 10px;
-  line-height: 16px;
-  /* color: gray; */
-}
+  .quote {
+    margin-top: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+    font-family: 'Literata-Italic', serif;
+    font-size: 11px;
+    line-height: 16px;
+    /* color: gray; */
+  }
 
-#h1intro {
-  page-break-before: avoid;
-}
+  .biblio {
+    margin-top: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+    font-family: 'Literata-Regular', serif;
+    font-size: 10px;
+    line-height: 16px;
+    /* color: gray; */
+  }
 
-#footnoteIntro {
-  page-break-before: avoid;
-}
+  .titlepagebreak {
+    page-break-before: always;
+  }
 
-#biblio {
-  page-break-before: always;
-}
+  .textpagebreak {
+    page-break-after: always;
+  }
+
+  .indent1 {
+    text-indent: 10px;
+  }
+
+  .indent2 {
+    padding-left: 20px;
+  }
+
+  #h1intro {
+    page-break-before: avoid;
+  }
+
+  #h1Abstract {
+    page-break-before: always;
+  }
+
+  #h1Table {
+    page-break-before: always;
+  }
+
+  #footnoteIntro {
+    page-break-before: avoid;
+  }
+
+  #biblio {
+    page-break-before: always;
+  }
+
+  #textpagebreak {
+    page-break-after: always;
+  }
