@@ -254,6 +254,23 @@
     padding-left: 20px;
   }
 
+  .width{
+    max-width: 100%
+  }
+
+  .caption {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    font-family: 'NotCourierSans', monospace;
+    font-size: 10px;
+    line-height: 16px;
+    page-break-before: avoid;
+    /* page-break-after: avoid; */
+    /* color: gray; */
+  }
+
   #h1intro {
     page-break-before: avoid;
   }
